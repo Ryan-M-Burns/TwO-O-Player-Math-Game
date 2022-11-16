@@ -1,5 +1,4 @@
 class Question
-
   attr_accessor :answer
 
   def initialize
@@ -26,5 +25,4 @@ class Question
       return false
     end
   end
-
 end
