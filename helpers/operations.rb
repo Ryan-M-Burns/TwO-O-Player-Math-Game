@@ -1,18 +1,18 @@
 @operations = [
   {
-    operand: '+'
+    operand: '+',
     word: 'plus'
   },
   {
-    operand: '-'
+    operand: '-',
     word: 'minus'
   },
   {
-    operand: '/'
+    operand: '/',
     word: 'divided by'
   },
   {
-    operand: '*'
+    operand: '*',
     word: 'multiplied by'
   }
 ]

@@ -1,20 +1,20 @@
 class Question
 
-  attr_accessor :question, :answer
+  attr_accessor :answer
 
   def initialize
-    @operator = @operations.sample()
+    @operator = @operations.sample
     @value1 = rand(1...10)
     @value2 = rand(1...10)
     @answer = generate_answer()
   end
 
   def generate_answer
-    (@value1 + @value2)
+    eval("#{@value1} #{@operator[:operand]} #{@value2}").to_f
   end
 
-  def ask_question
-    puts "What does #{@value1} #{@operator.word} #{@value2} equal?"
+  def generate_question
+    puts "What does #{@value1} #{@operator[:word]} #{@value2} equal?"
   end
 
   def eval_answer(player_answer)
